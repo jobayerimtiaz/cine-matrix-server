@@ -22,11 +22,8 @@ app.get("/", (req, res) => {
   res.send("Server is running");
 });
 
-app.use("/api/inngest", serve({ client: inngest, functions }));
+app.get("/api/inngest", serve({ client: inngest, functions }));
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
-
-//UhSmKiQPHY4DQq1A
-//cine_matrix_user
